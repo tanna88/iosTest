@@ -13,6 +13,8 @@
 		A53F0B7A19A2FA62008B3B10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A53F0B7819A2FA62008B3B10 /* Main.storyboard */; };
 		A53F0B7C19A2FA62008B3B10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A53F0B7B19A2FA62008B3B10 /* Images.xcassets */; };
 		A53F0B8819A2FA62008B3B10 /* BestCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A53F0B8719A2FA62008B3B10 /* BestCodeTests.m */; };
+		A53F0B9919A2FC01008B3B10 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A53F0B9819A2FC01008B3B10 /* User.m */; };
+		A53F0B9C19A2FC63008B3B10 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = A53F0B9B19A2FC63008B3B10 /* Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,10 @@
 		A53F0B8119A2FA62008B3B10 /* BestCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BestCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53F0B8619A2FA62008B3B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A53F0B8719A2FA62008B3B10 /* BestCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BestCodeTests.m; sourceTree = "<group>"; };
+		A53F0B9719A2FC01008B3B10 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		A53F0B9819A2FC01008B3B10 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		A53F0B9A19A2FC63008B3B10 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		A53F0B9B19A2FC63008B3B10 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,10 @@
 				A53F0B7819A2FA62008B3B10 /* Main.storyboard */,
 				A53F0B7B19A2FA62008B3B10 /* Images.xcassets */,
 				A53F0B6E19A2FA62008B3B10 /* Supporting Files */,
+				A53F0B9719A2FC01008B3B10 /* User.h */,
+				A53F0B9819A2FC01008B3B10 /* User.m */,
+				A53F0B9A19A2FC63008B3B10 /* Utils.h */,
+				A53F0B9B19A2FC63008B3B10 /* Utils.m */,
 			);
 			path = BestCode;
 			sourceTree = "<group>";
@@ -215,8 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53F0B9919A2FC01008B3B10 /* User.m in Sources */,
 				A53F0B7719A2FA62008B3B10 /* ViewController.m in Sources */,
 				A53F0B7419A2FA62008B3B10 /* AppDelegate.m in Sources */,
+				A53F0B9C19A2FC63008B3B10 /* Utils.m in Sources */,
 				A53F0B7119A2FA62008B3B10 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

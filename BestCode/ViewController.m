@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "User.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *txtName;
+@property (strong, nonatomic) NSTimer *timer;
 
 @end
 
@@ -16,12 +19,27 @@
             
 - (void)viewDidLoad {
   [super viewDidLoad];
-  // Do any additional setup after loading the view, typically from a nib.
+  _timer = [NSTimer scheduledTimerWithTimeInterval:2.0
+                                   target:self
+                                 selector:@selector(checkPassword)
+                                 userInfo:nil
+                                  repeats:YES];
 }
 
-- (void)didReceiveMemoryWarning {
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
+- (IBAction)showNewNamePressed:(id)sender {
+  User *user = [User getInstance];
+  [user radomizeName];
+  self.txtName.text = user.name;
+}
+
+- (void)checkPassword
+{
+  User *user = [User getInstance];
+  if (user.password != nil) {
+    [_timer invalidate];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"RingMD" message:@"Password is generated" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+  }
 }
 
 @end
